@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>My First Postmortem - Based on a true story.</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+            <!-- Header -->
+            <header id="header">
+                <h1 id="logo"><a href="../index.html">Cofucan</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+<!--                        <li>-->
+<!--                            <a href="#">Layouts</a>-->
+<!--                            <ul>-->
+<!--                                <li><a href="../left-sidebar.html">Left Sidebar</a></li>-->
+<!--                                <li><a href="../right-sidebar.html">Right Sidebar</a></li>-->
+<!--                                <li><a href="../no-sidebar.html">No Sidebar</a></li>-->
+<!--                                <li>-->
+<!--                                    <a href="#">Submenu</a>-->
+<!--                                    <ul>-->
+<!--                                        <li><a href="#">Option 1</a></li>-->
+<!--                                        <li><a href="#">Option 2</a></li>-->
+<!--                                        <li><a href="#">Option 3</a></li>-->
+<!--                                        <li><a href="#">Option 4</a></li>-->
+<!--                                    </ul>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li><a href="../elements.html">Elements</a></li>-->
+                        <li><a href="#" class="button primary">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Main -->
+            <div id="main" class="wrapper style1">
+                <div class="container">
+                    <header class="major">
+                        <h2>Postmortem: The Pythonic Version Mismatch Fiasco of 2023</h2>
+                        <p>Fictional, but based on a true story.</p>
+                    </header>
+
+                    <!-- Content -->
+                    <section id="content">
+                        <figure>
+                            <a href="#" class="image fit"
+                                ><img
+                                    src="https://res.cloudinary.com/dgtvb02kh/image/upload/v1698143719/Illustration_of_a_Python_snake_tangled_in_mismatched_versions_bekotw.png"
+                                    alt=""
+                            /></a>
+                            <figcaption>
+                                Illustration of a Python snake tangled in mismatched versions.
+                            </figcaption>
+                        </figure>
+                        <br />
+                        <h3>Issue Summary</h3>
+                        <ul>
+                            <li>
+                                <span>Duration of Outage: </span> From 14:00 GMT to 16:30 GMT on May 18, 2023,
+                                spanning 2.5 agonizing hours.
+                            </li>
+                            <li>
+                                <span>Impact: </span> Backend services experienced a complete shutdown,
+                                leading to server errors on the frontend. Every single user (our dear
+                                development team) was affected, marking a 100% impact rate.
+                            </li>
+                            <li>
+                                <span>Root Cause: </span> A discrepancy in the Python version between the
+                                development machines and the production server.
+                            </li>
+                        </ul>
+
+                        <figure>
+                            <a href="#" class="image fit"
+                                ><img
+                                    src="https://res.cloudinary.com/dgtvb02kh/image/upload/v1698143719/Illustration_showing_the_timeline_of_events_figjrh.png"
+                                    alt=""
+                            /></a>
+                            <figcaption>
+                                Illustration showing the timeline of events:
+                                <ol>
+                                    <li>1. 'Backend Down' alert symbolized by a red siren.</li>
+                                    <li>
+                                        2. Backend developer inspecting Datadog metrics represented by a
+                                        magnifying glass over a graph.
+                                    </li>
+                                    <li>
+                                        3. A split snake, half labeled 'Python 3.8' and the other half 'Python
+                                        3.11', illustrating the version mismatch.
+                                    </li>
+                                    <li>
+                                        4. Team collaborating over a virtual meeting, depicted by multiple
+                                        screens.
+                                    </li>
+                                    <li>
+                                        5. A victorious snake labeled 'Python 3.11' with a crown, symbolizing
+                                        the resolution.
+                                    </li>
+                                </ol>
+                            </figcaption>
+                        </figure>
+
+                        <br />
+
+                        <h3>Timeline</h3>
+                        <ul>
+                            <li>
+                                <span>14:00 GMT: </span> Right after deploying the latest code, the backend
+                                went dark. The frontend developers, in their characteristic style, flooded the
+                                group chat with a barrage of "Backend down?" memes, signaling the start of the
+                                crisis.
+                            </li>
+                            <li>
+                                <span>14:05 GMT: </span> The severity of the issue was recognized post the
+                                deployment of the third "Everything's burning 🔥" meme by a frontend
+                                developer.
+                            </li>
+                            <li>
+                                <span>14:10 GMT: </span> Initial thoughts veered towards a potential server
+                                crash. A quick glance at Datadog showed that the server metrics were stable,
+                                leading to even more confusion.
+                            </li>
+                            <li>
+                                <span>14:25 GMT: </span> Diving deep into the server logs revealed Python
+                                syntax errors. A whisper of "Just a syntax error, right?" echoed through the
+                                virtual meeting room.
+                            </li>
+                            <li>
+                                <span>14:30 GMT: </span> The eureka moment arrived upon realizing that our
+                                innovative developers had been using Python 3.11 features, which were alien to
+                                our server's Python 3.8.
+                            </li>
+                            <li>
+                                <span>14:45 GMT: </span> The situation was escalated to the lead backend
+                                developer, who was on a coffee break. They responded with a witty "Python
+                                3.11? That's news to me!" GIF.
+                            </li>
+                            <li>
+                                <span>15:00 GMT: </span> After a quick consensus, we decided to bring our
+                                server up-to-date with Python 3.11. The downloading and compilation phase
+                                began, accompanied by some light-hearted banter to lighten the mood.
+                            </li>
+                            <li>
+                                <span>16:15 GMT: </span> With Python 3.11 finally in place, services were
+                                restarted, and the team anxiously awaited the results.
+                            </li>
+                            <li>
+                                <span>16:30 GMT: </span> Victory! Services were back online, and the frontend
+                                team sent a flurry of "We're back in business! 🚀" memes.
+                            </li>
+                        </ul>
+
+                        <figure>
+                            <a href="#" class="image fit"
+                                ><img src="https://res.cloudinary.com/dgtvb02kh/image/upload/v1698143720/Flowchart_illustrating_the_debugging_process_fzakak.png" alt=""
+                            /></a>
+                            <figcaption>
+                                Flowchart illustrating the debugging process: Start with a 'Backend Down'
+                                alert. Arrow leading to 'Check Server Metrics' represented by Datadog logo.
+                                Decision diamond asking 'Syntax Error?'. If yes, arrow leads to 'Check Python
+                                Version'. Another decision diamond asking 'Version Mismatch?'. If yes, arrow
+                                leads to 'Upgrade Python' symbolized by a downloading arrow and a compilation
+                                gear. Final step, 'Restart Services' with a green check mark.
+                            </figcaption>
+                        </figure>
+
+                        <br />
+
+                        <h3>Root Cause and Resolution</h3>
+                        <p>
+                            The heart of the outage lay in a mismatch between Python versions. Our production
+                            server was comfortably running Python 3.8, but the newly deployed code was
+                            flaunting Python 3.11 syntax, leading to syntax errors that paralyzed our backend.
+                        </p>
+
+                        <p>The resolution was three-fold:</p>
+
+                        <ol>
+                            <li>Swift identification of the mismatched Python syntax.</li>
+                            <li>
+                                A methodical upgrade of the server's Python version to 3.11, which involved
+                                manually downloading and compiling the source code.
+                            </li>
+                            <li>A system-wide service restart to implement the changes.</li>
+                        </ol>
+
+                        <h3>Corrective and Preventive Measures</h3>
+
+                        <figure>
+                            <a href="#" class="image fit"
+                                ><img src="https://res.cloudinary.com/dgtvb02kh/image/upload/v1698143719/Photo_collage_of_the_corrective_measures_cvssqa.png" alt=""
+                            /></a>
+                            <figcaption>
+                                Photo collage of the corrective measures: Docker logo symbolizing standardized
+                                environment, CI/CD pipeline represented by interconnected gears, alert bell
+                                for automated alerts, Datadog logo with Python version, a book for README
+                                documentation, and a classroom board for team training.
+                            </figcaption>
+
+                            <br />
+                        </figure>
+
+                        <h3>Future Improvements:</h3>
+
+                        <ul>
+                            <li>Homogenizing development environments to ensure uniformity.</li>
+                            <li>
+                                Instituting a continuous integration system that checks for version
+                                discrepancies.
+                            </li>
+                            <li>
+                                Designing an automated rollback mechanism for deployments that don't meet the
+                                mark.
+                            </li>
+                        </ul>
+
+                        <h3>Actionable TODO List:</h3>
+
+                        <ol>
+                            <li>Introduce Docker for a standardized development environment.</li>
+                            <li>
+                                Set up a robust CI/CD pipeline to identify and rectify version mismatches
+                                pre-deployment.
+                            </li>
+                            <li>Implement automated alerts for any future syntax errors.</li>
+                            <li>Incorporate Python version monitoring within Datadog.</li>
+                            <li>
+                                Update and maintain Python version requirements in the project README
+                                diligently.
+                            </li>
+                            <li>
+                                Organize a training session to familiarize the team with new procedures and
+                                perhaps, encourage a moderate use of memes during crisis situations.
+                            </li>
+                        </ol>
+
+                        <p>
+                            In retrospect, this incident serves as a reminder of the importance of maintaining
+                            version consistency across environments. A gentle nudge to always ensure our tech
+                            stack is harmoniously synchronized! 🐍🔄
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <!-- <li><a href="https://twitter.com/coolucheofia" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    <!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+                    <!-- <li><a href="+234 903 181 3252" class="fa fa-phone" aria-hidden="true"><span class="label">Phone</span></a></li> -->
+                    <li><a href="https://www.linkedin.com/in/cofucan" class="icon brands alt fa-linkedin-in"><span
+                            class="label">LinkedIn</span></a></li>
+                    <li><a href="https://www.instagram.com/cofucan/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+                    </li>
+                    <li><a href="https://github.com/Cofucan" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+                    </li>
+                    <li><a href="mailto:cofucan@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Cofucan. All rights reserved.</li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.scrolly.min.js"></script>
+        <script src="../assets/js/jquery.dropotron.min.js"></script>
+        <script src="../assets/js/jquery.scrollex.min.js"></script>
+        <script src="../assets/js/browser.min.js"></script>
+        <script src="../assets/js/breakpoints.min.js"></script>
+        <script src="../assets/js/util.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>

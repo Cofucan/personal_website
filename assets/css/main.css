@@ -2147,6 +2147,10 @@ input, select, textarea {
 
 		}
 
+	#content span {
+		font-weight: bold;
+	}
+
 /* Section/Article */
 
 	section.special, article.special {
